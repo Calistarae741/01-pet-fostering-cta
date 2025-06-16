@@ -1,0 +1,113 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light blue background for the page */
+}
+
+/* Style for the CTA banner section */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover; /* Make sure the image covers the banner */
+  background-position: center;
+  /* Add a semi-transparent overlay using background color and background-blend-mode */
+  background-color: rgba(30, 144, 163, 0.85); /* teal-blue with opacity */
+  background-blend-mode: lighten;
+  color: #ffffff; /* white text for contrast */
+  padding: 60px 20px; /* tall banner with space around content */
+  text-align: center; /* center all text and button */
+}
+
+/* Large, bold heading */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Short description styling */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #38cfd9; /* bright teal button */
+  color: #1e3d59; /* dark blue text for contrast */
+  padding: 15px 35px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px; /* slightly rounded corners */
+  border: none;
+  cursor: pointer;
+  /* Add a simple shadow for emphasis */
+  box-shadow: 0 2px 8px rgba(30, 61, 89, 0.15);
+}
+
+/* Button hover effect for better interaction */
+.cta-button:hover {
+  background-color: #2bb3c0;
+}
+
+/* Style for the site name header */
+.site-name {
+  background-color: #1e3d59; /* dark blue background */
+  color: #ffffff; /* white text */
+  text-align: center;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Info section with two columns: image left, text right */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  background-color: #f0fbfc; /* very light blue background */
+  border-radius: 8px;
+  text-align: left;
+  /* Prevent text from wrapping under the image */
+  white-space: normal;
+}
+
+/* Image on the left */
+.info-image {
+  width: 45%;
+  max-width: 300px;
+  vertical-align: top;
+  border-radius: 8px;
+  margin-right: 5%;
+  display: inline-block;
+}
+
+/* Text on the right */
+.info-text {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 600px) {
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .info-text {
+    text-align: center;
+  }
+}
